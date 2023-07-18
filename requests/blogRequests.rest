@@ -1,0 +1,33 @@
+GET "http://localhost:3003/api/blogs/"
+
+###
+
+GET "http://localhost:3003/api/blogs/64b6bd9ab6666d41d26f23bc"
+
+###
+
+POST "http://localhost:3003/api/blogs/"
+Content-Type: "application/json"
+
+{
+  title: 'Learn Singing',
+  author: 'Pooja Kamat',
+  url: 'https://www.google.com',
+  likes: 105 
+}
+
+###
+
+PATCH "http://localhost:3003/api/blogs/64b6bd9ab6666d41d26f23bc"
+Content-Type: "application/json"
+
+{
+  title: 'Learn Singing',
+  author: 'Pooja Kamat',
+  url: 'https://www.google.com',
+  likes: 105 
+}
+
+###
+
+DELETE  "http://localhost:3003/api/blogs/64b6bd9ab6666d41d26f23bc"
